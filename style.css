@@ -1,0 +1,104 @@
+ * {
+     box-sizing: border-box;
+ }
+
+ h1, h2 {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+ }
+ .header {
+     height: 100%;
+     background-color: goldenrod;
+ }
+ body{
+     z-index: 0;
+     margin:0;
+     padding: 0%;
+     background-color: #FFE662;
+     height: 100%;
+     width: 1920px;   
+ }
+
+ .section-three{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+ .doggo-wp{
+    left:829px;
+    position: absolute;
+    width: 262px;
+    height: 572px;
+    margin-top: 15px;
+
+ }
+ .doggo-wp-invisible{
+    opacity: 0%;
+    position: fixed;
+    left:0;
+    top:0;
+    width: 414px;
+    height: 736px;
+
+ }
+ .mockup{
+    left: 818px;
+    position: absolute;
+    z-index: 1;
+    width: 284px;
+    height: 601px;
+ }
+
+ .button-div {
+     z-index: 1;
+     margin-top: 680px;
+     display: flex;
+     align-content: space-around;
+ }
+
+ .oneByOneBTN {
+     margin: 0 5px;
+ }
+
+ .allInOneBTN {
+    margin: 0 5px;
+}
+
+.generateImageDiv {
+    z-index: 1;
+    margin-top: 10px;
+}
+
+ .row1, .row2, .row3, .row4, .row5 {
+    height: 20%;
+    width: 100%;
+ }
+ .row12, .row22, .row32, .row42, .row52 {
+    height: 20%;
+    width: 100%;
+ }
+
+
+ @media (max-width: 543px){
+     :root{
+         --body-width: 100%;
+     }
+    body{
+        width: var(--body-width);
+    }
+    .doggo-wp{
+        position: absolute;
+        left: 46px;
+        width: 76%;
+        height: 78%;
+        
+   
+     }
+     .mockup{
+        position: absolute;
+        z-index: 1;
+        left: 40px;
+        width: 80%;
+        height: 82%;
+     }
+ }
