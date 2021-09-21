@@ -1,2 +1,2 @@
 # MyDoggoWallpaper
-Wallpaper generator using doggo API
+Wallpaper generator using Dog API (https://dog.ceo/dog-api/)
