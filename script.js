@@ -114,7 +114,11 @@ function createCanvas(){
 function createCanvas2(){
     doggoWP2.style.opacity  = '100%';
     html2canvas(doggoWP2, {useCORS: true}).then((canvas) => {
-    window.open().document.write('<img src="' + canvas.toDataURL() + '" />');
+    const image = canvas.toDataURL();
+    const link = document.createElement("a");
+    link.href = image;
+    link.download = "MyDoggoWallpaper.png";
+    link.click()
     });
     doggoWP2.style.opacity = '0%';
 }
