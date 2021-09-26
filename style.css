@@ -2,21 +2,29 @@
      box-sizing: border-box;
  }
 
+ html {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+body{
+    padding: 0%;
+    margin: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: #FFE662;
+}
+
  h1, h2 {
     font-family: 'Roboto', sans-serif;
     text-align: center;
  }
- .header {
+.header {
      height: 100%;
+     width: 100%;
      background-color: goldenrod;
- }
- body{
-     z-index: 0;
-     margin:0;
-     padding: 0%;
-     background-color: #FFE662;
-     height: 100%;
-     width: 1920px;   
  }
 
  .section-three{
@@ -25,11 +33,14 @@
     align-items: center;
 }
  .doggo-wp{
-    left:829px;
+    left:50%;
+    right: 50%;
+    transform: translate(-50%, 0);
     position: absolute;
-    width: 262px;
+    width: 260px;
     height: 572px;
     margin-top: 15px;
+    background-color: white;
 
  }
  .doggo-wp-invisible{
@@ -42,7 +53,9 @@
 
  }
  .mockup{
-    left: 818px;
+    left:50%;
+    right: 50%;
+    transform: translate(-50%, 0);
     position: absolute;
     z-index: 1;
     width: 284px;
@@ -87,18 +100,19 @@
         width: var(--body-width);
     }
     .doggo-wp{
+        left:50%;
+        right: 50%;
+        transform: translate(-50%, 0);
         position: absolute;
-        left: 52px;
-        width: 74%;
-        height: 78%;
         
    
      }
      .mockup{
+        left:50%;
+        right: 50%;
+        transform: translate(-50%, 0);
         position: absolute;
         z-index: 1;
-        left: 40px;
-        width: 80%;
-        height: 82%;
+
      }
  }
