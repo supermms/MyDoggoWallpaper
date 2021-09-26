@@ -13,10 +13,7 @@ const row52 = document.querySelector(".row52");
 const doggoWP = document.querySelector(".doggo-wp");
 const doggoWP2 = document.querySelector(".doggo-wp-invisible");
 const botao1 = document.querySelector(".oneByOneBTN");
-
-
-
-const botao3 = document.querySelector(".generateImageBTN");
+const botao2 = document.querySelector(".downloadImageBTN");
 
 let imageIndex = 0;
 
@@ -103,13 +100,6 @@ function addNewDoggo(appendLocal){
     });
 }
 
-function createCanvas(){  
-
-    html2canvas(doggoWP2,{useCORS: true}).then(canvas => {
-        document.body.appendChild(canvas)
-    });
-
-}
 
 function createCanvas2(){
     doggoWP2.style.opacity  = '100%';
@@ -126,4 +116,4 @@ function createCanvas2(){
 
 botao1.addEventListener("click", addNewDoggo);
 
-botao3.addEventListener("click", createCanvas2);
+botao2.addEventListener("click", createCanvas2);
