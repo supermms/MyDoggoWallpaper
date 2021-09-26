@@ -8,23 +8,32 @@
     align-items: center;
 }
 
-
 body{
-    padding: 0%;
-    margin: 0%;
+    padding: 0;
+    margin: 0;
     width: 100%;
     height: 100%;
-    background-color: #FFE662;
+    background-color: #e0fbfc;
+   
+}
+
+.my-header {
+    text-align: center;
+    height: 180px;
+    background-color: #3d5a80;
+    border-bottom: #98c1d9 2px solid;
+}
+
+#logo{
+    margin-top: 15px;
+    width: 256px;
+    height: 144px;
 }
 
  h1, h2 {
     font-family: 'Roboto', sans-serif;
+    font-weight: 300;
     text-align: center;
- }
-.header {
-     height: 100%;
-     width: 100%;
-     background-color: goldenrod;
  }
 
  .section-three{
@@ -62,24 +71,37 @@ body{
     height: 601px;
  }
 
+ .oneByOneBTN {
+    height: 30px;
+    font-family: 'Roboto', sans-serif;
+    color: #e0fbfc;
+    font-weight: 500;
+    border: 0;
+    background-color: #3d5a80;
+    border-radius: 12px;
+ }
+
+ .generateImageBTN {
+    height: 30px;
+    font-family: 'Roboto', sans-serif;
+    color: #e0fbfc;
+    font-weight: 500;
+    border: 0;
+    background-color: #3d5a80;
+    border-radius: 12px;
+ }
+
  .button-div {
      z-index: 1;
-     margin-top: 680px;
+     margin-top: 640px;
      display: flex;
      align-content: space-around;
  }
 
- .oneByOneBTN {
-     margin: 0 5px;
- }
-
- .allInOneBTN {
-    margin: 0 5px;
-}
-
 .generateImageDiv {
     z-index: 1;
     margin-top: 10px;
+    margin-bottom: 10px;
 }
 
  .row1, .row2, .row3, .row4, .row5 {
@@ -90,7 +112,6 @@ body{
     height: 20%;
     width: 100%;
  }
-
 
  @media (max-width: 543px){
      :root{
